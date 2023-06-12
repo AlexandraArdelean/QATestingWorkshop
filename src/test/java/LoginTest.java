@@ -47,7 +47,7 @@ public class LoginTest {
     @Test
     public void loginWithoutMandatoryFields() {
         driver.get("http://testfasttrackit.info/selenium-test/");
-        driver.findElement(By.cssSelector("#.skip-account .label")).click();
+        driver.findElement(By.cssSelector(".skip-account .label")).click();
         driver.findElement(By.cssSelector("[title='Log In']")).click();
         driver.findElement(By.cssSelector("#send2")).click();
         WebElement emailErrorMessage = driver.findElement(By.id("advice-required-entry-email"));
